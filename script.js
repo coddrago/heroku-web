@@ -42,24 +42,6 @@ function initPlatformCards() {
     });
 }
 
-// Railway animation
-function initRailwayAnimation() {
-    const train = document.querySelector('.railway-card .train');
-    if (train) {
-        setInterval(() => {
-            train.style.transform = 'translateX(-100%)';
-            setTimeout(() => {
-                train.style.transition = 'none';
-                train.style.transform = 'translateX(200%)';
-                setTimeout(() => {
-                    train.style.transition = 'transform 8s linear';
-                    train.style.transform = 'translateX(-100%)';
-                }, 50);
-            }, 8000);
-        }, 8100);
-    }
-}
-
 // HikkaHost moon and stars animation
 function initHikkaHostAnimation() {
     const stars = document.querySelectorAll('.hikkahost-card .star');
